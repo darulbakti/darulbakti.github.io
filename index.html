@@ -187,6 +187,90 @@
     .why-grid{grid-template-columns:1fr}
     .hero{padding:64px 0 80px}
   }
+
+  /* ===== UJI SAYA: kuiz matematik SPM ===== */
+  .nav-uji{background:var(--gold-soft);color:var(--blue-dark)!important;font-weight:800!important;padding:.45rem .95rem;border-radius:999px;border:1.5px solid var(--gold)}
+  .nav-uji:hover{background:var(--gold)}
+  .btn-uji{background:var(--gold);color:var(--navy);box-shadow:0 8px 20px rgba(203,200,88,.35)}
+  .uji-teaser{background:linear-gradient(135deg,var(--gold-soft) 0%,#fff 70%);padding:64px 0;border-bottom:1px solid var(--line)}
+  .uji-box{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+  .uji-box h2{font-size:clamp(1.7rem,4vw,2.5rem);color:var(--navy);margin:.4rem 0 .8rem}
+  .uji-box h2 .hl{color:var(--blue)}
+  .uji-box > div > p{color:var(--muted);margin-bottom:1.2rem}
+  .uji-points{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1.6rem;list-style:none}
+  .uji-points li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-weight:700;font-size:.85rem;color:var(--navy)}
+  .uji-mock{background:var(--navy);color:#fff;border-radius:22px;padding:26px;box-shadow:0 20px 50px rgba(20,40,92,.25);transform:rotate(1.5deg)}
+  .uji-mock .m-top{display:flex;justify-content:space-between;font-size:.8rem;font-weight:700;opacity:.8;margin-bottom:10px}
+  .uji-mock .m-bar{height:6px;background:rgba(255,255,255,.15);border-radius:9px;margin-bottom:18px}
+  .uji-mock .m-bar i{display:block;width:30%;height:100%;background:var(--gold);border-radius:9px}
+  .uji-mock .m-q{font-family:'Montserrat';font-weight:800;margin-bottom:14px;line-height:1.35}
+  .uji-mock .m-o{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:9px 12px;margin-bottom:8px;font-weight:600;font-size:.92rem}
+  .uji-mock .m-o.ok{background:#1f9d55;border-color:#1f9d55}
+
+  .quiz{position:fixed;inset:0;z-index:100;background:rgba(12,26,61,.72);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:16px}
+  .quiz[hidden],.quiz [hidden]{display:none!important}
+  .qz-card{background:#fff;width:min(640px,100%);max-height:calc(100dvh - 32px);overflow:auto;border-radius:24px;padding:30px 28px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+  .qz-close{position:absolute;top:12px;right:14px;width:38px;height:38px;border-radius:50%;border:0;background:var(--bg-alt);font-size:1.5rem;line-height:1;cursor:pointer;color:var(--navy)}
+  .qz-head{text-align:center;margin-bottom:20px}
+  .qz-head img{width:72px;height:72px;margin:0 auto 10px;border-radius:50%}
+  .qz-head h2{color:var(--navy);font-size:1.55rem;margin:.3rem 0 .4rem}
+  .qz-head p{color:var(--muted);font-size:.95rem}
+  .qz-label{display:block;font-weight:700;color:var(--navy);font-size:.9rem;margin:16px 0 8px}
+  .qz-input{width:100%;font:inherit;padding:.8rem 1rem;border:2px solid var(--line);border-radius:12px}
+  .qz-input:focus{outline:none;border-color:var(--blue)}
+  .qz-forms{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .qz-form{font-family:'Montserrat';font-weight:800;padding:1rem;border-radius:14px;border:2px solid var(--line);background:#fff;cursor:pointer;color:var(--navy);font-size:.95rem}
+  .qz-form small{display:block;font-family:'Quicksand';font-weight:600;color:var(--muted);font-size:.78rem;margin-top:2px}
+  .qz-form[aria-pressed="true"]{border-color:var(--blue);background:#eaf5fb}
+  .qz-go{width:100%;justify-content:center;margin-top:20px;border:0;cursor:pointer;background:var(--navy);color:#fff}
+  .qz-go:disabled{opacity:.4;cursor:not-allowed;transform:none}
+  .qz-fine{text-align:center;font-size:.8rem;color:var(--muted);margin-top:12px}
+
+  .qz-top{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:.9rem;color:var(--muted);margin:4px 40px 10px 0}
+  .qz-timer{font-family:'Montserrat';font-weight:800;color:var(--navy);background:var(--bg-alt);padding:.25rem .7rem;border-radius:999px}
+  .qz-timer.low{background:#fde8e8;color:#c0392b}
+  .qz-prog{height:8px;background:var(--bg-alt);border-radius:9px;margin-bottom:20px;overflow:hidden}
+  .qz-prog i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--gold));width:0;transition:width .3s}
+  .qz-topic{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-dark);background:var(--gold-soft);padding:.3rem .7rem;border-radius:8px;margin-bottom:10px}
+  .qz-q{font-family:'Montserrat';font-weight:800;color:var(--navy);font-size:1.12rem;line-height:1.45;margin-bottom:18px}
+  .qz-opts{display:grid;gap:10px}
+  .qz-opt{text-align:left;font:inherit;font-weight:700;color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:14px;padding:.85rem 1rem;cursor:pointer;display:flex;gap:.8rem;align-items:center;transition:border-color .15s,background .15s}
+  .qz-opt:hover:not(:disabled){border-color:var(--blue)}
+  .qz-opt b{flex:none;width:30px;height:30px;border-radius:50%;background:var(--bg-alt);display:flex;align-items:center;justify-content:center;font-family:'Montserrat';color:var(--navy)}
+  .qz-opt.ok{border-color:#1f9d55;background:#e9f8ef}.qz-opt.ok b{background:#1f9d55;color:#fff}
+  .qz-opt.bad{border-color:#d64545;background:#fdeeee}.qz-opt.bad b{background:#d64545;color:#fff}
+  .qz-opt:disabled{cursor:default}
+  .qz-exp{margin-top:14px;background:var(--bg-alt);border-left:4px solid var(--blue);border-radius:10px;padding:12px 14px;font-size:.93rem}
+  .qz-next{width:100%;justify-content:center;margin-top:16px;border:0;cursor:pointer;background:var(--blue);color:#fff}
+  .mx{display:inline-flex;flex-direction:column;vertical-align:middle;border-left:2px solid currentColor;border-right:2px solid currentColor;border-radius:6px;padding:2px 10px;margin:0 4px;line-height:1.35;text-align:center;word-spacing:.6em}
+
+  .qz-grade{width:140px;height:140px;border-radius:50%;margin:6px auto 12px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-family:'Montserrat';box-shadow:0 12px 30px rgba(20,40,92,.25)}
+  .qz-grade b{font-size:2.6rem;font-weight:900;line-height:1}
+  .qz-grade span{font-size:.8rem;font-weight:700;opacity:.9;margin-top:4px}
+  .qz-score{text-align:center;font-family:'Montserrat';font-weight:900;color:var(--navy);font-size:1.25rem}
+  .qz-msg{text-align:center;color:var(--muted);margin:8px 0 18px}
+  .qz-map{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px}
+  .qz-map div{border-radius:14px;padding:14px}
+  .qz-map h4{font-family:'Montserrat';font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+  .qz-map ul{list-style:none;display:grid;gap:5px;font-size:.88rem;font-weight:600}
+  .qz-strong{background:#e9f8ef}.qz-strong h4{color:#1f7a45}
+  .qz-weak{background:#fdeeee}.qz-weak h4{color:#b03a3a}
+  .qz-cikgu{background:var(--navy);color:#fff;border-radius:16px;padding:16px 18px;margin-bottom:16px;font-size:.95rem}
+  .qz-cikgu b{color:var(--gold);font-family:'Montserrat'}
+  .qz-actions{display:grid;gap:10px}
+  .qz-actions .btn{justify-content:center;border:0;cursor:pointer}
+  .qz-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .btn-line{background:#fff;color:var(--navy);border:2px solid var(--line)!important}
+  .qz-review{margin-top:16px;border-top:1px solid var(--line);padding-top:14px}
+  .qz-review summary{cursor:pointer;font-weight:800;color:var(--blue-dark)}
+  .qz-review ol{margin:12px 0 0 1.2rem;display:grid;gap:10px;font-size:.9rem}
+  .qz-review .r-ok{color:#1f7a45;font-weight:700}.qz-review .r-bad{color:#b03a3a;font-weight:700}
+  @media (max-width:760px){
+    .uji-box{grid-template-columns:1fr}
+    .uji-mock{transform:none}
+    .qz-card{padding:24px 18px;border-radius:20px}
+    .qz-map,.qz-row{grid-template-columns:1fr}
+  }
 </style>
 </head>
 <body>
@@ -199,6 +283,7 @@
     </a>
     <button class="menu-btn" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul class="nav-links">
+      <li><a class="nav-uji" href="#uji" data-open-quiz>🎯 Uji Saya</a></li>
       <li><a href="#tentang">Tentang</a></li>
       <li><a href="#program">Program &amp; Yuran</a></li>
       <li><a href="#kejayaan">Kejayaan</a></li>
@@ -223,6 +308,7 @@
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>
             WhatsApp Kami
           </a>
+          <button class="btn btn-uji" data-open-quiz style="border:0;cursor:pointer">🎯 Uji Tahap Matematik</button>
           <a class="btn btn-ghost" href="#program">Lihat Yuran</a>
         </div>
       </div>
@@ -235,6 +321,29 @@
           <div class="stat"><b>RM60</b><span>Sebulan per subjek (Tingkatan 4 &amp; 5)</span></div>
           <div class="stat"><b>7</b><span>Subjek ditawarkan</span></div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UJI SAYA: teaser kuiz -->
+  <section class="uji-teaser" id="uji">
+    <div class="wrap uji-box">
+      <div class="reveal">
+        <span class="eyebrow">Uji Saya · Percuma</span>
+        <h2>Agak-agak, SPM Matematik kamu dapat <span class="hl">gred apa?</span></h2>
+        <p>Jawab 10 soalan gaya SPM ikut silibus KSSM dalam 10 minit. Kamu terus dapat anggaran gred dan senarai topik yang kuat dan yang perlu dibaiki. Soalan disediakan oleh pasukan Matematik Cikgu Non.</p>
+        <ul class="uji-points">
+          <li>✅ 10 soalan</li><li>⏱️ 10 minit</li><li>📊 Peta kekuatan topik</li><li>🆓 Tanpa daftar</li>
+        </ul>
+        <button class="btn btn-uji" data-open-quiz style="border:0;cursor:pointer">🎯 Mula Uji Sekarang</button>
+      </div>
+      <div class="uji-mock reveal" aria-hidden="true">
+        <div class="m-top"><span>Soalan 3 / 10</span><span>⏱ 07:42</span></div>
+        <div class="m-bar"><i></i></div>
+        <div class="m-q">Diberi n(A) = 12, n(B) = 9 dan n(A ∩ B) = 4. Cari n(A ∪ B).</div>
+        <div class="m-o">A&nbsp;&nbsp;21</div>
+        <div class="m-o ok">B&nbsp;&nbsp;17 ✓</div>
+        <div class="m-o">C&nbsp;&nbsp;25</div>
       </div>
     </div>
   </section>
@@ -476,6 +585,62 @@
   <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>
 </a>
 
+
+<!-- UJI SAYA: kuiz (dibuka automatik bila URL ada ?uji atau #uji) -->
+<div class="quiz" id="quiz" role="dialog" aria-modal="true" aria-labelledby="qz-title" hidden>
+  <div class="qz-card">
+    <button class="qz-close" type="button" aria-label="Tutup kuiz">×</button>
+
+    <div id="qz-start">
+      <div class="qz-head">
+        <img class="qz-logo" alt="">
+        <span class="eyebrow">Uji Saya</span>
+        <h2 id="qz-title">Uji Tahap Matematik SPM</h2>
+        <p>10 soalan · 10 minit · ikut silibus KSSM<br>Ketahui anggaran gred dan topik yang perlu dibaiki.</p>
+      </div>
+      <label class="qz-label" for="qz-name">Nama kamu (pilihan)</label>
+      <input class="qz-input" id="qz-name" type="text" maxlength="40" placeholder="cth: Aina" autocomplete="given-name">
+      <span class="qz-label">Kamu di tingkatan berapa?</span>
+      <div class="qz-forms">
+        <button type="button" class="qz-form" data-form="4" aria-pressed="false">Tingkatan 4<small>Topik Tingkatan 4</small></button>
+        <button type="button" class="qz-form" data-form="5" aria-pressed="false">Tingkatan 5<small>Topik T5 + ulang kaji T4</small></button>
+      </div>
+      <button type="button" class="btn qz-go" id="qz-go" disabled>Mula Uji →</button>
+      <p class="qz-fine">Matematik sahaja (bukan Matematik Tambahan). Percuma, tiada pendaftaran.</p>
+    </div>
+
+    <div id="qz-play" hidden>
+      <div class="qz-top"><span id="qz-count">Soalan 1 / 10</span><span class="qz-timer" id="qz-timer">10:00</span></div>
+      <div class="qz-prog"><i id="qz-bar"></i></div>
+      <span class="qz-topic" id="qz-topic"></span>
+      <div class="qz-q" id="qz-q"></div>
+      <div class="qz-opts" id="qz-opts"></div>
+      <div class="qz-exp" id="qz-exp" hidden></div>
+      <button type="button" class="btn qz-next" id="qz-next" hidden>Seterusnya →</button>
+    </div>
+
+    <div id="qz-result" hidden>
+      <div class="qz-grade" id="qz-grade"><b>B</b><span>Anggaran gred</span></div>
+      <div class="qz-score" id="qz-score"></div>
+      <p class="qz-msg" id="qz-msg"></p>
+      <div class="qz-map">
+        <div class="qz-strong"><h4>✅ Topik kuat</h4><ul id="qz-strong"></ul></div>
+        <div class="qz-weak"><h4>🎯 Perlu dibaiki</h4><ul id="qz-weak"></ul></div>
+      </div>
+      <div class="qz-cikgu" id="qz-cikgu"></div>
+      <div class="qz-actions">
+        <a class="btn btn-wa" id="qz-wa" href="#" target="_blank" rel="noopener">💬 Hantar keputusan &amp; tanya kelas Matematik</a>
+        <div class="qz-row">
+          <button type="button" class="btn btn-line" id="qz-share">📤 Cabar kawan</button>
+          <button type="button" class="btn btn-line" id="qz-again">🔁 Cuba lagi</button>
+        </div>
+      </div>
+      <details class="qz-review"><summary>Semak jawapan &amp; jalan kerja</summary><ol id="qz-review"></ol></details>
+      <p class="qz-fine">* Anggaran berdasarkan 10 soalan sahaja, bukan keputusan rasmi SPM.</p>
+    </div>
+  </div>
+</div>
+
 <script>
   // === TETAPAN: tukar nombor WhatsApp di sini sahaja ===
   const WHATSAPP = "60135253712";
@@ -501,6 +666,171 @@
   // Animasi muncul semasa skrol
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 });
   document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+  // ===== UJI SAYA: kuiz Matematik SPM (KSSM) =====
+  // Pautan QR: https://darulbakti.github.io/?uji=1&utm_source=qr_flyer
+  const SOALAN = {
+    4: [
+      {t:"Fungsi & Persamaan Kuadratik", q:"Selesaikan persamaan kuadratik x² − 5x + 6 = 0.", o:["x = 2 atau x = 3","x = −2 atau x = −3","x = 1 atau x = 6","x = −1 atau x = 6"], a:0, e:"Faktorkan: (x − 2)(x − 3) = 0, maka x = 2 atau x = 3."},
+      {t:"Asas Nombor", q:"Tukarkan 1011<sub>2</sub> kepada nombor dalam asas sepuluh.", o:["9","11","13","1011"], a:1, e:"1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11."},
+      {t:"Penaakulan Logik", q:"Apakah akas bagi implikasi <i>“Jika x = 3, maka x² = 9”</i>?", o:["Jika x² = 9, maka x = 3","Jika x ≠ 3, maka x² ≠ 9","Jika x² ≠ 9, maka x ≠ 3","x = 3 jika dan hanya jika x² = 9"], a:0, e:"Akas bagi “Jika p, maka q” ialah “Jika q, maka p”."},
+      {t:"Operasi Set", q:"Diberi n(A) = 12, n(B) = 9 dan n(A ∩ B) = 4. Cari n(A ∪ B).", o:["21","25","17","13"], a:2, e:"n(A ∪ B) = n(A) + n(B) − n(A ∩ B) = 12 + 9 − 4 = 17."},
+      {t:"Rangkaian dalam Teori Graf", q:"Sebuah graf mempunyai 6 bucu dan 7 tepi. Berapakah hasil tambah darjah semua bucu?", o:["7","13","14","42"], a:2, e:"Hasil tambah darjah = 2 × bilangan tepi = 2 × 7 = 14."},
+      {t:"Ketaksamaan Linear", q:"Titik manakah yang memuaskan ketaksamaan y > 2x + 1?", o:["(1, 2)","(0, 2)","(2, 4)","(3, 6)"], a:1, e:"Gantikan (0, 2): 2 > 2(0) + 1 = 1 ✔. Titik-titik lain tidak memuaskan ketaksamaan."},
+      {t:"Graf Gerakan", q:"Sebuah kereta bergerak sejauh 120 km dalam masa 1 jam 30 minit. Hitung laju purata kereta itu.", o:["60 km/j","80 km/j","90 km/j","180 km/j"], a:1, e:"Laju = jarak ÷ masa = 120 ÷ 1.5 = 80 km/j. Ingat: 30 minit = 0.5 jam."},
+      {t:"Sukatan Serakan", q:"Cari julat bagi data berikut:<br>12, 7, 15, 9, 20, 11", o:["8","13","11","20"], a:1, e:"Julat = nilai terbesar − nilai terkecil = 20 − 7 = 13."},
+      {t:"Kebarangkalian Bergabung", q:"Sekeping syiling dilambung dan sebiji dadu dilontar. Cari kebarangkalian mendapat ‘kepala’ <b>dan</b> nombor genap.", o:["1/2","1/3","1/4","1/6"], a:2, e:"P(kepala) × P(genap) = 1/2 × 3/6 = 1/4."},
+      {t:"Pengurusan Kewangan", q:"Aina menyimpan RM150 setiap bulan untuk membeli komputer riba berharga RM2 700. Berapa bulan dia perlu menyimpan?", o:["15 bulan","16 bulan","18 bulan","20 bulan"], a:2, e:"RM2 700 ÷ RM150 = 18 bulan."}
+    ],
+    5: [
+      {t:"Ubahan", q:"Diberi y berubah secara langsung dengan x. Jika y = 12 apabila x = 4, cari nilai y apabila x = 7.", o:["16","21","28","3"], a:1, e:"y = kx → 12 = 4k → k = 3. Maka y = 3(7) = 21."},
+      {t:"Matriks", q:'Cari penentu bagi matriks <span class="mx"><span>2 1</span><span>3 4</span></span>', o:["5","11","−5","8"], a:0, e:"Penentu = ad − bc = (2)(4) − (1)(3) = 8 − 3 = 5."},
+      {t:"Insurans", q:"Polisi insurans kereta Encik Ali mempunyai deduktibel RM500. Kerugian yang dituntut ialah RM3 000. Berapakah bayaran pampasan syarikat insurans?", o:["RM3 500","RM3 000","RM2 500","RM500"], a:2, e:"Pampasan = kerugian − deduktibel = RM3 000 − RM500 = RM2 500."},
+      {t:"Percukaian", q:"Bil perkhidmatan berjumlah RM250 dikenakan cukai perkhidmatan 8%. Berapakah cukai yang perlu dibayar?", o:["RM8","RM20","RM25","RM270"], a:1, e:"8% × RM250 = 0.08 × 250 = RM20."},
+      {t:"Pembesaran & Transformasi", q:"Sebuah segi tiga dengan luas 5 cm² dibesarkan dengan faktor skala 3. Cari luas imejnya.", o:["15 cm²","30 cm²","45 cm²","8 cm²"], a:2, e:"Luas imej = k² × luas objek = 3² × 5 = 45 cm²."},
+      {t:"Graf Fungsi Trigonometri", q:"Apakah nilai maksimum bagi y = 2 kos x + 1?", o:["1","2","3","4"], a:2, e:"Nilai maksimum kos x ialah 1, maka y = 2(1) + 1 = 3."},
+      {t:"Serakan Data Terkumpul", q:"Cari titik tengah bagi selang kelas 10 – 19.", o:["14","14.5","15","9.5"], a:1, e:"Titik tengah = (10 + 19) ÷ 2 = 14.5."},
+      {t:"Pemodelan Matematik", q:"Kos pelan telefon diberi oleh C = 30 + 0.10m, dengan m ialah bilangan minit panggilan. Cari kos bagi 200 minit.", o:["RM32","RM50","RM230","RM20"], a:1, e:"C = 30 + 0.10(200) = 30 + 20 = RM50."},
+      {t:"Fungsi Kuadratik (T4)", q:"Cari persamaan paksi simetri bagi graf y = x² − 6x + 5.", o:["x = −3","x = 3","x = 5","x = 6"], a:1, e:"Paksi simetri: x = −b ÷ 2a = −(−6) ÷ 2(1) = 3."},
+      {t:"Asas Nombor (T4)", q:"Tukarkan 23<sub>8</sub> kepada nombor dalam asas sepuluh.", o:["19","23","21","15"], a:0, e:"2×8¹ + 3×8⁰ = 16 + 3 = 19."}
+    ]
+  };
+  const GRED = [ // [skor minimum /10, gred, warna, mesej]
+    [9,"A+","#1f9d55","Cemerlang! Asas kamu sangat kukuh. Di Darul Bakti kami bantu kamu kekalkan A+ dengan latihan soalan KBAT."],
+    [8,"A","#1f9d55","Hebat! Sedikit lagi ke A+. Latihan soalan KBAT boleh bawa kamu ke puncak."],
+    [7,"A-","#1b89bf","Bagus! Kamu sudah di landasan gred A. Fokus pada topik yang tersilap."],
+    [6,"B","#1b89bf","Baik! Kamu hampir ke gred A. Kuasai topik di bawah dan gred kamu boleh naik."],
+    [5,"C","#d6a400","Kamu sudah lulus. Dengan bimbingan yang betul, gred kamu boleh naik dengan cepat."],
+    [4,"E","#e07b1a","Hampir! Asas sudah ada, cuma perlu dikukuhkan topik demi topik."],
+    [0,"G","#d64545","Jangan risau. Ramai pelajar kami bermula dengan G dan akhirnya lulus SPM. Jom mula dari asas."]
+  ];
+  const MASA = 600; // saat
+  const qz = id => document.getElementById(id);
+  const quiz = qz("quiz");
+  let tingkatan = null, set = [], idx = 0, jawapan = [], baki = MASA, jam = null;
+  const track = (e, p) => { try { if (window.gtag) gtag("event", e, p || {}); } catch (_) {} };
+
+  qz("quiz").querySelector(".qz-logo").src = document.querySelector(".brand img").src;
+
+  function bukaKuiz() {
+    quiz.hidden = false; document.body.style.overflow = "hidden";
+    if (qz("qz-result").hidden && qz("qz-play").hidden) qz("qz-name").focus({preventScroll:true});
+    track("uji_buka");
+  }
+  function tutupKuiz() {
+    quiz.hidden = true; document.body.style.overflow = "";
+    clearInterval(jam);
+    if (!qz("qz-play").hidden) tunjuk("qz-start"); // reset jika belum habis
+  }
+  function tunjuk(id) { ["qz-start","qz-play","qz-result"].forEach(s => qz(s).hidden = s !== id); quiz.querySelector(".qz-card").scrollTop = 0; }
+
+  document.querySelectorAll("[data-open-quiz]").forEach(b => b.addEventListener("click", e => { e.preventDefault(); links.classList.remove("open"); bukaKuiz(); }));
+  quiz.querySelector(".qz-close").addEventListener("click", tutupKuiz);
+  quiz.addEventListener("click", e => { if (e.target === quiz) tutupKuiz(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !quiz.hidden) tutupKuiz(); });
+
+  document.querySelectorAll(".qz-form").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll(".qz-form").forEach(x => x.setAttribute("aria-pressed", "false"));
+    b.setAttribute("aria-pressed", "true"); tingkatan = b.dataset.form; qz("qz-go").disabled = false;
+  }));
+
+  function acak(arr) { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+  function mula() {
+    set = SOALAN[tingkatan].map(s => ({...s, susun: acak([0,1,2,3])}));
+    idx = 0; jawapan = []; baki = MASA;
+    tunjuk("qz-play"); papar(); kemasJam();
+    clearInterval(jam);
+    jam = setInterval(() => { baki--; kemasJam(); if (baki <= 0) { clearInterval(jam); tamat(); } }, 1000);
+    track("uji_mula", {tingkatan});
+  }
+  function kemasJam() {
+    const m = Math.floor(baki / 60), s = baki % 60;
+    qz("qz-timer").textContent = "⏱ " + String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+    qz("qz-timer").classList.toggle("low", baki <= 60);
+  }
+  function papar() {
+    const s = set[idx];
+    qz("qz-count").textContent = "Soalan " + (idx + 1) + " / " + set.length;
+    qz("qz-bar").style.width = (idx / set.length * 100) + "%";
+    qz("qz-topic").textContent = s.t;
+    qz("qz-q").innerHTML = s.q;
+    qz("qz-exp").hidden = true; qz("qz-next").hidden = true;
+    const box = qz("qz-opts"); box.innerHTML = "";
+    s.susun.forEach((oi, k) => {
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "qz-opt"; b.dataset.oi = oi;
+      b.innerHTML = "<b>" + "ABCD"[k] + "</b><span></span>";
+      b.querySelector("span").textContent = s.o[oi];
+      b.addEventListener("click", () => pilih(oi));
+      box.appendChild(b);
+    });
+  }
+  function pilih(oi) {
+    const s = set[idx]; jawapan[idx] = oi;
+    qz("qz-opts").querySelectorAll(".qz-opt").forEach(b => {
+      b.disabled = true; const v = +b.dataset.oi;
+      if (v === s.a) b.classList.add("ok"); else if (v === oi) b.classList.add("bad");
+    });
+    qz("qz-exp").innerHTML = (oi === s.a ? "<b>✅ Betul!</b> " : "<b>❌ Kurang tepat.</b> ") + s.e;
+    qz("qz-exp").hidden = false;
+    qz("qz-next").textContent = idx === set.length - 1 ? "Lihat Keputusan 🎉" : "Seterusnya →";
+    qz("qz-next").hidden = false; qz("qz-next").focus({preventScroll:true});
+  }
+  qz("qz-next").addEventListener("click", () => { if (idx < set.length - 1) { idx++; papar(); } else tamat(); });
+  qz("qz-go").addEventListener("click", mula);
+
+  function tamat() {
+    clearInterval(jam);
+    const betul = set.filter((s, i) => jawapan[i] === s.a).length;
+    const g = GRED.find(x => betul >= x[0]);
+    const kuat = set.filter((s, i) => jawapan[i] === s.a).map(s => s.t);
+    const lemah = set.filter((s, i) => jawapan[i] !== s.a).map(s => s.t);
+    const nama = qz("qz-name").value.trim();
+
+    qz("qz-grade").style.background = g[2];
+    qz("qz-grade").innerHTML = "<b>" + g[1] + "</b><span>Anggaran gred</span>";
+    qz("qz-score").textContent = (nama ? nama + ", skor kamu " : "Skor kamu ") + betul + " / " + set.length;
+    qz("qz-msg").textContent = g[3];
+    const isi = (ul, arr, kosong) => { ul.innerHTML = ""; (arr.length ? arr : [kosong]).forEach(t => { const li = document.createElement("li"); li.textContent = "• " + t; ul.appendChild(li); }); };
+    isi(qz("qz-strong"), kuat, "Belum ada, jom bina dari asas!");
+    isi(qz("qz-weak"), lemah, "Tiada! Semua betul 👏");
+
+    qz("qz-cikgu").innerHTML = lemah.length
+      ? "<b>Nota Cikgu Non:</b> Kamu perlu kukuhkan <b>" + lemah.length + " topik</b>. Setiap topik yang dikuasai boleh menambah markah dalam Kertas 1 dan Kertas 2. Di kelas Matematik Darul Bakti, kami ajar langkah demi langkah sampai faham."
+      : "<b>Nota Cikgu Non:</b> Markah penuh! Kamu calon A+. Sertai kelas kami untuk latihan soalan KBAT dan teknik menjawab Kertas 2.";
+
+    const mesej = "Assalamualaikum Cikgu, saya " + (nama || "pelajar") + " (Tingkatan " + tingkatan + ").\n" +
+      "Saya baru buat *Uji Tahap Matematik SPM* di website Darul Bakti.\n" +
+      "Skor: *" + betul + "/10* (anggaran gred " + g[1] + ")\n" +
+      (lemah.length ? "Topik perlu dibaiki: " + lemah.join(", ") + "\n" : "") +
+      "Saya nak tahu tentang kelas Matematik.";
+    qz("qz-wa").href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(mesej);
+
+    const rv = qz("qz-review"); rv.innerHTML = "";
+    set.forEach((s, i) => {
+      const li = document.createElement("li"), ok = jawapan[i] === s.a;
+      li.innerHTML = "<div>" + s.q + "</div><div class='" + (ok ? "r-ok" : "r-bad") + "'></div><div></div>";
+      li.children[1].textContent = (ok ? "✔ Betul: " : (jawapan[i] === undefined ? "✘ Tidak dijawab. Jawapan: " : "✘ Jawapan betul: ")) + s.o[s.a];
+      li.children[2].textContent = s.e;
+      rv.appendChild(li);
+    });
+    tunjuk("qz-result");
+    track("uji_selesai", {tingkatan, skor: betul, gred: g[1]});
+  }
+
+  qz("qz-wa").addEventListener("click", () => track("uji_whatsapp", {tingkatan}));
+  qz("qz-again").addEventListener("click", () => tunjuk("qz-start"));
+  qz("qz-share").addEventListener("click", async () => {
+    const url = location.origin + location.pathname + "?uji=1&utm_source=share";
+    const teks = "Aku dah cuba Uji Tahap Matematik SPM Darul Bakti. Berani cabar? 10 soalan, 10 minit 👇";
+    track("uji_kongsi");
+    if (navigator.share) { try { await navigator.share({title: "Uji Tahap Matematik SPM", text: teks, url}); } catch (_) {} }
+    else window.open("https://wa.me/?text=" + encodeURIComponent(teks + "\n" + url), "_blank", "noopener");
+  });
+
+  // Buka terus bila datang dari QR code / pautan kongsi
+  if (new URLSearchParams(location.search).has("uji") || location.hash === "#uji-mula") bukaKuiz();
 </script>
 </body>
 </html>
